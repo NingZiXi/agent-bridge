@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "agent-bridge": {
+      "command": "node",
+      "args": ["/path/to/agent-bridge/dist/main.js"],
+      "env": {
+        "AGENT_BRIDGE_DB": "/path/to/agent-bridge/data/agent-bridge.db"
+      }
+    }
+  }
+}

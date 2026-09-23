@@ -78,8 +78,8 @@ agent-bridge/
 │   ├── codex.config.toml.example      # Codex CLI 接入
 │   ├── qoder.mcp.json.example         # Qoder CN CLI 接入
 │   ├── qoder-add-mcp.bat              # Qoder CN Windows 一键添加
-│   ├── codex-desktop.mcp.json         # Codex 桌面版接入
-│   └── qoder-desktop.mcp.json         # Qoder IDE 桌面版接入
+│   ├── codex-desktop.mcp.json.example # Codex 桌面版接入
+│   └── qoder-desktop.mcp.json.example # Qoder IDE 桌面版接入
 ├── README.md
 ├── package.json
 ├── tsconfig.json
@@ -273,9 +273,9 @@ Codex 桌面版走 VS Code 原生 MCP 配置，写入 `.vscode/mcp.json`（项�
 - **两个桌面版必须指向同一个数据库文件**：`AGENT_BRIDGE_DB` 都填同一个
   `data/agent-bridge.db`，否则 Codex 与 Qoder 读写的是不同的库，互相看不到任务。
 
-> 已针对 Windows 生成可直接复制的配置示例（node 绝对路径已写死）：
-> [config/qoder-desktop.mcp.json](config/qoder-desktop.mcp.json)、
-> [config/codex-desktop.mcp.json](config/codex-desktop.mcp.json)。
+> 桌面版接入的配置示例（占位符版本）：
+> [config/qoder-desktop.mcp.json.example](config/qoder-desktop.mcp.json.example)、
+> [config/codex-desktop.mcp.json.example](config/codex-desktop.mcp.json.example)。
 
 ---
 
@@ -341,3 +341,10 @@ npm run typecheck # 类型检查
 ## License
 
 [MIT](LICENSE)
+
+---
+
+## 参与贡献
+
+欢迎贡献！请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 与
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
