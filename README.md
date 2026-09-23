@@ -1,5 +1,9 @@
 # AgentBridge
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/NingZiXi/agent-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/NingZiXi/agent-bridge/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/NingZiXi/agent-bridge/releases)
+
 轻量级、可扩展的 **Agent-to-Agent 通信基础设施**。
 
 AgentBridge 通过 MCP 等标准接口，让 **Codex**、**Qoder CN** 以及未来的 **Claude Code**、**Gemini**、**OpenCode** 等 Agent 之间互相发送消息、派发任务、返回结果。
@@ -80,6 +84,13 @@ agent-bridge/
 │   ├── qoder-add-mcp.bat              # Qoder CN Windows 一键添加
 │   ├── codex-desktop.mcp.json.example # Codex 桌面版接入
 │   └── qoder-desktop.mcp.json.example # Qoder IDE 桌面版接入
+├── .github/
+│   ├── workflows/ci.yml               # CI（build + test + typecheck）
+│   ├── ISSUE_TEMPLATE/                # Issue 模板
+│   └── PULL_REQUEST_TEMPLATE.md       # PR 模板
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
 ├── README.md
 ├── package.json
 ├── tsconfig.json
