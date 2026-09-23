@@ -1,0 +1,16 @@
+# AgentBridge — Codex CLI 接入配置
+#
+# 将以下内容合并到 ~/.codex/config.toml（或项目级 .codex/config.toml）。
+# Codex 通过 stdio 启动 AgentBridge MCP Server。
+#
+# 注意：
+#   - 顶层键为 mcp_servers（不是 mcpServers）
+#   - command 需指向 node 可执行文件（Windows 下可用 npx 或绝对路径）
+#   - args 指向 AgentBridge 的 dist/main.js 或 npx 包名
+#   - 工具名会变成 mcp__agent-bridge__agent_register 等
+
+[mcp_servers.agent-bridge]
+command = "node"
+args = ["dist/main.js"]
+env = { "AGENT_BRIDGE_DB" = "data/agent-bridge.db" }
+cwd = "/absolute/path/to/agent-bridge"
